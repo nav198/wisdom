@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841E620D2C2C373E004F1325 /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E620C2C2C373E004F1325 /* UrlHelper.swift */; };
 		8421CEF42C294A3800255339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CEF32C294A3800255339 /* AppDelegate.swift */; };
 		8421CEF62C294A3800255339 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CEF52C294A3800255339 /* SceneDelegate.swift */; };
 		8421CEF82C294A3800255339 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CEF72C294A3800255339 /* LaunchViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841E620C2C2C373E004F1325 /* UrlHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlHelper.swift; sourceTree = "<group>"; };
 		8421CEF02C294A3800255339 /* wisdomLeaf_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wisdomLeaf_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8421CEF32C294A3800255339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8421CEF52C294A3800255339 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				8421CF312C29686400255339 /* UIImageView+Helper.swift */,
+				841E620C2C2C373E004F1325 /* UrlHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				8421CF272C294F1300255339 /* Model.swift in Sources */,
 				8421CEF82C294A3800255339 /* LaunchViewController.swift in Sources */,
 				8421CEF42C294A3800255339 /* AppDelegate.swift in Sources */,
+				841E620D2C2C373E004F1325 /* UrlHelper.swift in Sources */,
 				8421CEF62C294A3800255339 /* SceneDelegate.swift in Sources */,
 				8421CF252C294B6E00255339 /* DashboardViewController.swift in Sources */,
 			);
@@ -478,6 +482,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7F9BPDP3LZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wisdomLeaf_Task/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -485,6 +490,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,6 +515,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7F9BPDP3LZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wisdomLeaf_Task/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -516,6 +523,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

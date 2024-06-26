@@ -13,7 +13,7 @@ class DashboardViewController: UIViewController {
     
     let screenSize: CGRect = UIScreen.main.bounds
     
-    var photosArrayList = PhotosApi.photoArray.listOfPhotos
+    var photosArrayList = [PhotosListElement]()
     
     var selectedRows:[Int] = []
     
@@ -32,7 +32,11 @@ class DashboardViewController: UIViewController {
     
     let authorNameLabel: UILabel = {
         let lbl = UILabel()
-        lbl.textColor = .label
+        if #available(iOS 13.0, *) {
+            lbl.textColor = .label
+        } else {
+            // Fallback on earlier versions
+        }
         lbl.numberOfLines = 0
         lbl.text = ""
         lbl.font =  UIFont.systemFont(ofSize: 21, weight: .semibold)
@@ -42,7 +46,11 @@ class DashboardViewController: UIViewController {
     
     let authorDescLabel: UILabel = {
         let lbl = UILabel()
-        lbl.textColor = .label
+        if #available(iOS 13.0, *) {
+            lbl.textColor = .label
+        } else {
+            // Fallback on earlier versions
+        }
         lbl.numberOfLines = 0
         lbl.text = ""
         lbl.font =  UIFont.systemFont(ofSize: 20, weight: .regular)
@@ -64,8 +72,26 @@ class DashboardViewController: UIViewController {
             self.refreshControl.endRefreshing()
         }
         
+        getPhotosList()
+        
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         dataTable.refreshControl = refreshControl
+    }
+    
+    func getPhotosList(){
+        let url = URL(string: "https://picsum.photos/v2/list?page=2&limit=20")!
+          URLSession.shared.fetchData(for: url) { (result: Result<[PhotosListElement], Error>) in
+            switch result {
+            case .success(let result):
+                self.photosArrayList = result
+                DispatchQueue.main.async{
+                    self.dataTable.reloadData()
+                }
+//                print("photosArrayList\(self.photosArrayList)")
+            case .failure(let error):
+                print("Error)")
+          }
+        }
     }
     
     @objc func refreshData() {
@@ -80,7 +106,11 @@ class DashboardViewController: UIViewController {
     
     func setupViews() {
         view.addSubview(dataTable)
-        view.backgroundColor = .systemBackground
+        if #available(iOS 13.0, *) {
+            view.backgroundColor = .systemBackground
+        } else {
+            // Fallback on earlier versions
+        }
         self.navigationItem.hidesBackButton = true
         if #available(iOS 15.0, *) {
             dataTable.sectionHeaderTopPadding = 0
@@ -115,14 +145,22 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
         cell.titleLabel.text = photosArrayList[indexPath.row].author
       
         if self.selectedRows.contains(indexPath.row){
-            cell.checkboxButton.setImage(UIImage(systemName: "checkmark.rectangle.fill"), for: .normal)
+            if #available(iOS 13.0, *) {
+                cell.checkboxButton.setImage(UIImage(systemName: "checkmark.rectangle.fill"), for: .normal)
+            } else {
+                // Fallback on earlier versions
+            }
         }else{
-            cell.checkboxButton.setImage(UIImage(systemName: "rectangle"), for: .normal)
+            if #available(iOS 13.0, *) {
+                cell.checkboxButton.setImage(UIImage(systemName: "rectangle"), for: .normal)
+            } else {
+                // Fallback on earlier versions
+            }
         }
 
         cell.checkboxButton.tag = indexPath.row
-        cell.checkboxButton.addTarget(self, action: #selector(checkMarkAction(_:)), for: .touchUpInside)
-        let url = URL(string: "\(photosArrayList[indexPath.row].downloadUrl)")
+            cell.checkboxButton.addTarget(self, action: #selector(checkMarkAction(_:)), for: .touchUpInside)
+        let url = URL(string: "\(photosArrayList[indexPath.row].downloadURL)")
         
         if indexPath.row % 3 == 0 {
             cell.descLabel.text = "Thriller"
@@ -133,7 +171,7 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
         }
         
           //  without any package loading of images using URL session - Takes more memory
-         // cell.mainImage.imageFromURL(urlString: "\(photosArrayList[indexPath.row].downloadUrl)")
+//          cell.mainImage.imageFromURL(urlString: "\(photosArrayList[indexPath.row].downloadURL)")
         
        // Using Package - Kingfisher - Memory Efficient
         KF.url(url, cacheKey:"\(String(describing: url?.absoluteString))") .downsampling(size: CGSize(width: cell.contentView.frame.height, height: cell.contentView.frame.height))
@@ -144,6 +182,7 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
     }
 }
 
+@available(iOS 13.0, *)
 extension DashboardViewController{
     @objc func checkMarkAction(_ sender:UIButton){
         
@@ -152,11 +191,19 @@ extension DashboardViewController{
         }
         sender.isSelected = !sender.isSelected
         if sender.isSelected {
-            sender.setImage(UIImage(systemName: "checkmark.rectangle.fill"), for: .normal)
+            if #available(iOS 13.0, *) {
+                sender.setImage(UIImage(systemName: "checkmark.rectangle.fill"), for: .normal)
+            } else {
+                // Fallback on earlier versions
+            }
             showDescription(sender.tag)
         }else{
             showAlert(sender.tag)
-            sender.setImage(UIImage(systemName: "rectangle"), for: .normal)
+            if #available(iOS 13.0, *) {
+                sender.setImage(UIImage(systemName: "rectangle"), for: .normal)
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     
@@ -183,7 +230,11 @@ extension DashboardViewController{
         authorDescView.translatesAutoresizingMaskIntoConstraints = false
         authorDescView.backgroundColor = .white
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundView.backgroundColor = .systemGray4.withAlphaComponent(0.2)
+        if #available(iOS 13.0, *) {
+            backgroundView.backgroundColor = .systemGray4.withAlphaComponent(0.2)
+        } else {
+            // Fallback on earlier versions
+        }
         
      
         view.addSubview(backgroundView)
