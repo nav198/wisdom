@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8421CEF42C294A3800255339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CEF32C294A3800255339 /* AppDelegate.swift */; };
+		8421CEF62C294A3800255339 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CEF52C294A3800255339 /* SceneDelegate.swift */; };
+		8421CEF82C294A3800255339 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CEF72C294A3800255339 /* LaunchViewController.swift */; };
+		8421CEFB2C294A3800255339 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8421CEFA2C294A3800255339 /* Base */; };
+		8421CEFD2C294A3A00255339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8421CEFC2C294A3A00255339 /* Assets.xcassets */; };
+		8421CF002C294A3A00255339 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8421CEFF2C294A3A00255339 /* Base */; };
+		8421CF252C294B6E00255339 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CF242C294B6E00255339 /* DashboardViewController.swift */; };
+		8421CF272C294F1300255339 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CF262C294F1300255339 /* Model.swift */; };
+		8421CF2C2C29507300255339 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CF2B2C29507300255339 /* DashboardTableViewCell.swift */; };
+		8421CF2F2C29581200255339 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8421CF2E2C29581200255339 /* Kingfisher */; };
+		8421CF322C29686400255339 /* UIImageView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CF312C29686400255339 /* UIImageView+Helper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8421CF072C294A3A00255339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8421CEE82C294A3800255339 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8421CEEF2C294A3800255339;
+			remoteInfo = wisdomLeaf_Task;
+		};
+		8421CF112C294A3B00255339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8421CEE82C294A3800255339 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8421CEEF2C294A3800255339;
+			remoteInfo = wisdomLeaf_Task;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8421CEF02C294A3800255339 /* wisdomLeaf_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wisdomLeaf_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8421CEF32C294A3800255339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8421CEF52C294A3800255339 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8421CEF72C294A3800255339 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		8421CEFA2C294A3800255339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8421CEFC2C294A3A00255339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8421CEFF2C294A3A00255339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8421CF012C294A3A00255339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8421CF062C294A3A00255339 /* wisdomLeaf_TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wisdomLeaf_TaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8421CF102C294A3B00255339 /* wisdomLeaf_TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wisdomLeaf_TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8421CF242C294B6E00255339 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		8421CF262C294F1300255339 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8421CF2B2C29507300255339 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		8421CF312C29686400255339 /* UIImageView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Helper.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8421CEED2C294A3800255339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8421CF2F2C29581200255339 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8421CF032C294A3A00255339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8421CF0D2C294A3B00255339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8421CEE72C294A3800255339 = {
+			isa = PBXGroup;
+			children = (
+				8421CEF22C294A3800255339 /* wisdomLeaf_Task */,
+				8421CEF12C294A3800255339 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8421CEF12C294A3800255339 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8421CEF02C294A3800255339 /* wisdomLeaf_Task.app */,
+				8421CF062C294A3A00255339 /* wisdomLeaf_TaskTests.xctest */,
+				8421CF102C294A3B00255339 /* wisdomLeaf_TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8421CEF22C294A3800255339 /* wisdomLeaf_Task */ = {
+			isa = PBXGroup;
+			children = (
+				8421CF2A2C29504500255339 /* AppResources */,
+				8421CF302C29685200255339 /* Helpers */,
+				8421CF282C294FE000255339 /* Model */,
+				8421CF292C294FE500255339 /* View */,
+				8421CF232C294A5900255339 /* Controllers */,
+				8421CEF92C294A3800255339 /* Main.storyboard */,
+				8421CEFC2C294A3A00255339 /* Assets.xcassets */,
+				8421CEFE2C294A3A00255339 /* LaunchScreen.storyboard */,
+				8421CF012C294A3A00255339 /* Info.plist */,
+			);
+			path = wisdomLeaf_Task;
+			sourceTree = "<group>";
+		};
+		8421CF232C294A5900255339 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8421CEF72C294A3800255339 /* LaunchViewController.swift */,
+				8421CF242C294B6E00255339 /* DashboardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8421CF282C294FE000255339 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8421CF262C294F1300255339 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8421CF292C294FE500255339 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8421CF2B2C29507300255339 /* DashboardTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8421CF2A2C29504500255339 /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				8421CEF32C294A3800255339 /* AppDelegate.swift */,
+				8421CEF52C294A3800255339 /* SceneDelegate.swift */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		8421CF302C29685200255339 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8421CF312C29686400255339 /* UIImageView+Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8421CEEF2C294A3800255339 /* wisdomLeaf_Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8421CF1A2C294A3B00255339 /* Build configuration list for PBXNativeTarget "wisdomLeaf_Task" */;
+			buildPhases = (
+				8421CEEC2C294A3800255339 /* Sources */,
+				8421CEED2C294A3800255339 /* Frameworks */,
+				8421CEEE2C294A3800255339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wisdomLeaf_Task;
+			packageProductDependencies = (
+				8421CF2E2C29581200255339 /* Kingfisher */,
+			);
+			productName = wisdomLeaf_Task;
+			productReference = 8421CEF02C294A3800255339 /* wisdomLeaf_Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8421CF052C294A3A00255339 /* wisdomLeaf_TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8421CF1D2C294A3B00255339 /* Build configuration list for PBXNativeTarget "wisdomLeaf_TaskTests" */;
+			buildPhases = (
+				8421CF022C294A3A00255339 /* Sources */,
+				8421CF032C294A3A00255339 /* Frameworks */,
+				8421CF042C294A3A00255339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8421CF082C294A3A00255339 /* PBXTargetDependency */,
+			);
+			name = wisdomLeaf_TaskTests;
+			productName = wisdomLeaf_TaskTests;
+			productReference = 8421CF062C294A3A00255339 /* wisdomLeaf_TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8421CF0F2C294A3B00255339 /* wisdomLeaf_TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8421CF202C294A3B00255339 /* Build configuration list for PBXNativeTarget "wisdomLeaf_TaskUITests" */;
+			buildPhases = (
+				8421CF0C2C294A3B00255339 /* Sources */,
+				8421CF0D2C294A3B00255339 /* Frameworks */,
+				8421CF0E2C294A3B00255339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8421CF122C294A3B00255339 /* PBXTargetDependency */,
+			);
+			name = wisdomLeaf_TaskUITests;
+			productName = wisdomLeaf_TaskUITests;
+			productReference = 8421CF102C294A3B00255339 /* wisdomLeaf_TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8421CEE82C294A3800255339 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					8421CEEF2C294A3800255339 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					8421CF052C294A3A00255339 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8421CEEF2C294A3800255339;
+					};
+					8421CF0F2C294A3B00255339 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8421CEEF2C294A3800255339;
+					};
+				};
+			};
+			buildConfigurationList = 8421CEEB2C294A3800255339 /* Build configuration list for PBXProject "wisdomLeaf_Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8421CEE72C294A3800255339;
+			packageReferences = (
+				8421CF2D2C29581200255339 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 8421CEF12C294A3800255339 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8421CEEF2C294A3800255339 /* wisdomLeaf_Task */,
+				8421CF052C294A3A00255339 /* wisdomLeaf_TaskTests */,
+				8421CF0F2C294A3B00255339 /* wisdomLeaf_TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8421CEEE2C294A3800255339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8421CEFD2C294A3A00255339 /* Assets.xcassets in Resources */,
+				8421CF002C294A3A00255339 /* Base in Resources */,
+				8421CEFB2C294A3800255339 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8421CF042C294A3A00255339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8421CF0E2C294A3B00255339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8421CEEC2C294A3800255339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8421CF2C2C29507300255339 /* DashboardTableViewCell.swift in Sources */,
+				8421CF322C29686400255339 /* UIImageView+Helper.swift in Sources */,
+				8421CF272C294F1300255339 /* Model.swift in Sources */,
+				8421CEF82C294A3800255339 /* LaunchViewController.swift in Sources */,
+				8421CEF42C294A3800255339 /* AppDelegate.swift in Sources */,
+				8421CEF62C294A3800255339 /* SceneDelegate.swift in Sources */,
+				8421CF252C294B6E00255339 /* DashboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8421CF022C294A3A00255339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8421CF0C2C294A3B00255339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8421CF082C294A3A00255339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8421CEEF2C294A3800255339 /* wisdomLeaf_Task */;
+			targetProxy = 8421CF072C294A3A00255339 /* PBXContainerItemProxy */;
+		};
+		8421CF122C294A3B00255339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8421CEEF2C294A3800255339 /* wisdomLeaf_Task */;
+			targetProxy = 8421CF112C294A3B00255339 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8421CEF92C294A3800255339 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8421CEFA2C294A3800255339 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8421CEFE2C294A3A00255339 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8421CEFF2C294A3A00255339 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8421CF182C294A3B00255339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8421CF192C294A3B00255339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8421CF1B2C294A3B00255339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wisdomLeaf_Task/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wisdomTask.wisdomLeaf-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8421CF1C2C294A3B00255339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wisdomLeaf_Task/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wisdomTask.wisdomLeaf-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8421CF1E2C294A3B00255339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wisdomTask.wisdomLeaf-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wisdomLeaf_Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wisdomLeaf_Task";
+			};
+			name = Debug;
+		};
+		8421CF1F2C294A3B00255339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wisdomTask.wisdomLeaf-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wisdomLeaf_Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wisdomLeaf_Task";
+			};
+			name = Release;
+		};
+		8421CF212C294A3B00255339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wisdomTask.wisdomLeaf-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wisdomLeaf_Task;
+			};
+			name = Debug;
+		};
+		8421CF222C294A3B00255339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wisdomTask.wisdomLeaf-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wisdomLeaf_Task;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8421CEEB2C294A3800255339 /* Build configuration list for PBXProject "wisdomLeaf_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8421CF182C294A3B00255339 /* Debug */,
+				8421CF192C294A3B00255339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8421CF1A2C294A3B00255339 /* Build configuration list for PBXNativeTarget "wisdomLeaf_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8421CF1B2C294A3B00255339 /* Debug */,
+				8421CF1C2C294A3B00255339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8421CF1D2C294A3B00255339 /* Build configuration list for PBXNativeTarget "wisdomLeaf_TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8421CF1E2C294A3B00255339 /* Debug */,
+				8421CF1F2C294A3B00255339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8421CF202C294A3B00255339 /* Build configuration list for PBXNativeTarget "wisdomLeaf_TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8421CF212C294A3B00255339 /* Debug */,
+				8421CF222C294A3B00255339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8421CF2D2C29581200255339 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8421CF2E2C29581200255339 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8421CF2D2C29581200255339 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8421CEE82C294A3800255339 /* Project object */;
+}
